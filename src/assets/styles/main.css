@@ -57,10 +57,12 @@ h1 {
 h2 {
   font-family: "Chewy", system-ui;
   font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 
 h3 {
   font-size: 1.7rem;
+  line-height: 2.3rem;
 }
 
 a {
@@ -214,12 +216,12 @@ a {
 }
 
 /*ESTILOS DEL CUERPO*/
-.receta {
+.receta, .mas-info, .comentarios {
   padding: 2rem;
   padding-top: 4rem;
 }
 @media (min-width: 500px) {
-  .receta {
+  .receta, .mas-info, .comentarios {
     padding: 4rem;
   }
 }
@@ -242,7 +244,8 @@ a {
   background-color: #7fb23a;
 }
 .consejo h3 {
-  text-decoration: underline;
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
 }
 
 .foto {
