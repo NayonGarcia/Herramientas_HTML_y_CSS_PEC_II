@@ -32,7 +32,7 @@
   align-items: center;
 
   padding: 0;
-  margin-top: 270px;
+  margin-top: px-a-rem(270px);
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -41,8 +41,8 @@
 
   @media (min-width: $mqTablet) {
     max-width: 90%;
-    margin-top: 200px;
-    padding-bottom: 50px;
+    margin-top: px-a-rem(200px);
+    padding-bottom: px-a-rem(50px);
   }
 
   @media (min-width: $mqPC) {
@@ -66,7 +66,7 @@
   margin-top: 3rem;
   margin-bottom: 4rem;
   padding: 1.5rem;
-  border-radius: 10%;
+  @include borde-redondo(10%)
 }
 
 
