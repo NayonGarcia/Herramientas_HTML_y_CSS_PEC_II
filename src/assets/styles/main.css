@@ -12,7 +12,7 @@
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
-@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
@@ -21,22 +21,22 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: "Klee One", sans-serif;
   font-size: 1em;
   line-height: 1.5em;
-  background-color: #cce4ac;
   color: #202d0f;
+  background-color: #cce4ac;
 }
 
 h1 {
   font-family: "Chewy", system-ui;
   font-size: 2rem;
   line-height: 2.5rem;
+  color: #7fb23a;
   text-align: center;
   text-shadow: 1px 1px 0 #202d0f;
-  color: #7fb23a;
 }
 @media (min-width: 500px) {
   h1 {
@@ -63,46 +63,46 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   color: #a700af;
+  text-decoration: none;
 }
 
 .header {
   display: grid;
-  justify-content: center;
   align-items: center;
-  height: auto;
+  justify-content: center;
   width: auto;
+  height: auto;
   font-weight: 600;
   text-align: center;
 }
 
 .contenedor {
   display: flex;
-  width: 100%;
-  justify-content: center;
   align-items: center;
-  margin: 0;
+  justify-content: center;
+  width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 .contenedor-texto {
   display: block;
-  width: 100%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 0;
   margin-top: 16.875rem;
+  margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-  margin-right: auto;
   background-color: #fff;
 }
 @media (min-width: 500px) {
   .contenedor-texto {
     max-width: 90%;
-    margin-top: 12.5rem;
     padding-bottom: 3.125rem;
+    margin-top: 12.5rem;
   }
 }
 @media (min-width: 850px) {
@@ -111,23 +111,27 @@ a {
   }
 }
 
-.receta, .mas-info, .comentarios {
+.receta,
+.mas-info,
+.comentarios {
   padding: 2rem;
   padding-top: 4rem;
 }
 @media (min-width: 500px) {
-  .receta, .mas-info, .comentarios {
+  .receta,
+  .mas-info,
+  .comentarios {
     padding: 4rem;
     padding-bottom: 0;
   }
 }
 
 .cuadro {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
   padding: 1.5rem;
+  margin-top: 3rem;
+  margin-right: 0;
+  margin-bottom: 4rem;
+  margin-left: 0;
   -moz-border-radius: 10%;
   -webkit-border-radius: 10%;
   -o-border-radius: 10%;
@@ -147,11 +151,11 @@ a {
 /*ESTILOS DEL ENCABEZADO*/
 .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
   max-width: 100px;
   height: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
 }
 @media (min-width: 500px) {
   .logo {
@@ -165,8 +169,8 @@ a {
   right: 0;
   left: 0;
   z-index: 20;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
   height: 7.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -176,16 +180,16 @@ a {
 
 .menu-principal {
   position: fixed;
+  top: 9.375rem;
   right: 0;
   left: 0;
-  top: 9.375rem;
   height: auto;
   padding-top: 0.7rem;
+  padding-right: 0;
   padding-bottom: 0.7rem;
   padding-left: 0;
-  padding-right: 0;
-  text-transform: uppercase;
   font-size: 0.8rem;
+  text-transform: uppercase;
   background-color: #fff;
   border-bottom: #a700af 1px solid;
 }
@@ -212,35 +216,37 @@ a {
 @media (min-width: 500px) {
   .menu-principal ul li {
     display: inline-block;
-    padding-left: 3em;
     padding-right: 3em;
+    padding-left: 3em;
   }
 }
 @media (min-width: 850px) {
   .menu-principal ul li {
-    padding-left: 1.5em;
     padding-right: 1.5em;
+    padding-left: 1.5em;
   }
 }
-.menu-principal ul li a {
+
+.enlace-menu {
   color: #202d0f;
   text-decoration: none;
 }
-.menu-principal ul li a:hover {
+
+.enlace-menu:hover {
   padding-top: 0.4rem;
+  padding-right: 5rem;
   padding-bottom: 0.4rem;
   padding-left: 5rem;
-  padding-right: 5rem;
   color: #fff;
   background-color: #a700af;
 }
 @media (min-width: 500px) {
-  .menu-principal ul li a:hover {
+  .enlace-menu:hover {
     padding: 0.4rem;
   }
 }
 @media (min-width: 850px) {
-  .menu-principal ul li a:hover {
+  .enlace-menu:hover {
     padding: 0.3rem;
   }
 }
@@ -270,17 +276,17 @@ a {
   font-size: 0.8rem;
 }
 .etiquetas ul {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 .etiquetas ul li {
   display: inline-block;
-  padding-left: 0.3rem;
   padding-right: 0.3rem;
+  padding-left: 0.3rem;
 }
 .etiquetas ul li a {
-  border: #a700af 1px solid;
   padding: 0.3rem;
+  border: #a700af 1px solid;
 }
 .etiquetas ul li a:hover {
   color: #fff;
@@ -289,8 +295,8 @@ a {
 
 .tarjetas {
   display: block;
-  margin: 0;
   padding: 1rem;
+  margin: 0;
 }
 
 .bloque {
@@ -299,10 +305,10 @@ a {
   grid-auto-rows: minmax(300px);
   gap: 1.25rem 1.25rem;
   justify-content: center;
-  margin-bottom: 2rem;
   max-width: 300px;
   max-height: 300px;
   padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 500px) {
   .bloque {
@@ -313,16 +319,16 @@ a {
 }
 .bloque h3 {
   align-content: center;
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-size: 1.2rem;
   text-align: center;
 }
 
 .card {
   display: block;
-  max-width: 300px;
   width: 100%;
+  max-width: 300px;
   height: auto;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -332,8 +338,8 @@ a {
 
 .redes {
   display: flex;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
 }
 .redes ul {
   padding: 0;

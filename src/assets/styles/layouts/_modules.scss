@@ -2,11 +2,12 @@
 
 .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
+
   max-width: 100px;
   height: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
 
   @media (min-width: $mqTablet) {
     max-width: 140px;
@@ -19,39 +20,39 @@
   right: 0;
   left: 0;
   z-index: 20;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
 
   height: px-a-rem(120px);
   padding-top: 1rem;
   padding-bottom: 1rem;
 
-  background-image: url("../images/portada_rvb.webp");
+  background-image: url('../images/portada_rvb.webp');
   background-size: cover;
-
 }
+
 
 .menu-principal {
   position: fixed;
+  top: px-a-rem(150px);
   right: 0;
   left: 0;
-  top: px-a-rem(150px);
-  
+
   height: auto;
   padding-top: 0.7rem;
-  padding-bottom:0.7rem;
-  padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0.7rem;
+  padding-left: 0;
 
-  text-transform: uppercase;
   font-size: 0.8rem;
+  text-transform: uppercase;
   background-color: #fff;
 
   border-bottom: $color-secundario 1px solid;
 
   @media (min-width: $mqTablet) {
     display: flex;
-    
+
     height: px-a-rem(50px);
 
     font-size: 0.9rem;
@@ -72,45 +73,41 @@
 
       @media (min-width: $mqTablet) {
         display: inline-block;
-
-        padding-left: 3em;
+        
         padding-right: 3em;
+        padding-left: 3em;
       }
 
       @media (min-width: $mqPC) {
-        padding-left: 1.5em;
         padding-right: 1.5em;
-      }
-
-      a {
-        color: $color-texto;
-        text-decoration: none;
-      }
-
-      a:hover {
-        padding-top: 0.4rem;
-        padding-bottom: 0.4rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        
-        color: #fff;
-        background-color: $color-secundario;
-
-        @media (min-width: $mqTablet) {
-          padding: 0.4rem;
-        }
-
-        @media (min-width: $mqPC) {
-          padding: 0.3rem;
-        }
+        padding-left: 1.5em;
       }
     }
   }
-
 }
 
+.enlace-menu {
+  color: $color-texto;
+  text-decoration: none;
+}
 
+.enlace-menu:hover {
+  padding-top: 0.4rem;
+  padding-right: 5rem;
+  padding-bottom: 0.4rem;
+  padding-left: 5rem;
 
+  color: #fff;
+  background-color: $color-secundario;
+
+  @media (min-width: $mqTablet) {
+    padding: 0.4rem;
+  }
+
+  @media (min-width: $mqPC) {
+    padding: 0.3rem;
+  }
+}
 
 /*ESTILOS DEL CUERPO*/
 
@@ -139,17 +136,21 @@
   font-size: 0.8rem;
 
   ul {
-    list-style-type: none;
     padding: 0;
+
+    list-style-type: none;
+
 
     li {
       display: inline-block;
-      padding-left: 0.3rem;
+
       padding-right: 0.3rem;
-      
+      padding-left: 0.3rem;
+
       a {
-        border: $color-secundario 1px solid;
         padding: 0.3rem;
+
+        border: $color-secundario 1px solid;
       }
 
       a:hover {
@@ -163,8 +164,8 @@
 .tarjetas {
   display: block;
   
-  margin: 0;
   padding: 1rem;
+  margin: 0;
 }
 
 .bloque {
@@ -174,10 +175,10 @@
   gap: px-a-rem(20px) px-a-rem(20px);
   justify-content: center;
 
-	margin-bottom: 2rem;
-	max-width: 300px;
+  max-width: 300px;
   max-height: 300px;
   padding: 0.5rem;
+  margin-bottom: 2rem;
 
   @media (min-width: $mqTablet) {
     gap: px-a-rem(40px) px-a-rem(40px);
@@ -186,12 +187,11 @@
     max-height: 350px;
   }
 
-
   h3 {
     align-content: center;
 
-    margin: 0;
     padding: 0;
+    margin: 0;
 
     font-size: 1.2rem;
     text-align: center;
@@ -201,20 +201,19 @@
 .card {
   display: block;
 
-  max-width: 300px;
   width: 100%;
+  max-width: 300px;
   height: auto;
 
   @include borde-redondo(50%);
 }
 
-
 //ESTILOS DEL PIE DE PÁGINA
 
 .redes {
   display: flex;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
 
   ul {
     padding: 0;
@@ -225,6 +224,3 @@
     }
   }
 }
-
-
-

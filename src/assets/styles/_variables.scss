@@ -1,33 +1,26 @@
-@use "sass:color";
+@use 'sass:color';
 
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
-
-$fuente-principal: "Klee One", sans-serif;
-$fuente-titulos: "Chewy", system-ui;
-
+$fuente-principal: 'Klee One', sans-serif;
+$fuente-titulos: 'Chewy', system-ui;
 
 $color-principal: #7fb23a;
 $color-secundario: #a700af;
 $color-fondo: color.scale($color-principal, $lightness: 60%);
 $color-texto: color.scale($color-principal, $lightness: -75%);
 
-
 $mqTablet: 500px;
 $mqPC: 850px;
 
-
 @mixin borde-redondo($radio) {
-    -moz-border-radius: $radio;
-    -webkit-border-radius: $radio;
-    -o-border-radius: $radio;
-    -ms-border-radius: $radio;
+  -moz-border-radius: $radio;
+  -webkit-border-radius: $radio;
+  -o-border-radius: $radio;
+  -ms-border-radius: $radio;
 }
 
-
 @function px-a-rem($px, $base: 16px) {
-    @return calc($px / $base) * 1rem;
-  }
-
-
+  @return calc($px / $base) * 1rem;
+}

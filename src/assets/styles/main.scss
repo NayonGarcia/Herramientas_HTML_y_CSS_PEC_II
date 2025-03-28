@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "variables";
+@import 'variables';
 
 /**
  * Import npm dependencies
@@ -15,7 +15,7 @@
  * see commented examples below
  */
 
- @import  "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
@@ -25,9 +25,9 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/base";
-@import "layouts/layout";
-@import "layouts/modules";
+@import 'layouts/base';
+@import 'layouts/layout';
+@import 'layouts/modules';
 
 /**
  * Do NOT include anything else in this file!
