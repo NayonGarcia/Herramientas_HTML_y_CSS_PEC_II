@@ -1,0 +1,354 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+/**
+ * Import variables
+ */
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Klee One", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #202d0f;
+  background-color: #cce4ac;
+}
+
+h1 {
+  font-family: "Chewy", system-ui;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #7fb23a;
+  text-align: center;
+  text-shadow: 1px 1px 0 #202d0f;
+}
+@media (min-width: 500px) {
+  h1 {
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+  }
+}
+@media (min-width: 850px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+h2 {
+  font-family: "Chewy", system-ui;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+}
+
+a {
+  color: #a700af;
+  text-decoration: none;
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor-texto {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin-top: 16.875rem;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  background-color: #fff;
+}
+@media (min-width: 500px) {
+  .contenedor-texto {
+    max-width: 90%;
+    padding-bottom: 3.125rem;
+    margin-top: 12.5rem;
+  }
+}
+@media (min-width: 850px) {
+  .contenedor-texto {
+    max-width: 60%;
+  }
+}
+
+.receta,
+.mas-info,
+.comentarios {
+  padding: 2rem;
+  padding-top: 4rem;
+}
+@media (min-width: 500px) {
+  .receta,
+  .mas-info,
+  .comentarios {
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+}
+
+.cuadro {
+  padding: 1.5rem;
+  margin-top: 3rem;
+  margin-right: 0;
+  margin-bottom: 4rem;
+  margin-left: 0;
+  -moz-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -o-border-radius: 10%;
+  -ms-border-radius: 10%;
+}
+
+.pie {
+  padding-top: 3rem;
+  background-color: #7fb23a;
+}
+@media (min-width: 500px) {
+  .pie {
+    padding-top: 2rem;
+  }
+}
+
+/*ESTILOS DEL ENCABEZADO*/
+.logo {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+@media (min-width: 500px) {
+  .logo {
+    max-width: 140px;
+  }
+}
+
+.portada {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  align-content: center;
+  justify-content: center;
+  height: 7.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: url("../images/portada_rvb.webp");
+  background-size: cover;
+}
+
+.menu-principal {
+  position: fixed;
+  top: 9.375rem;
+  right: 0;
+  left: 0;
+  height: auto;
+  padding-top: 0.7rem;
+  padding-right: 0;
+  padding-bottom: 0.7rem;
+  padding-left: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-bottom: #a700af 1px solid;
+}
+@media (min-width: 500px) {
+  .menu-principal {
+    display: flex;
+    height: 3.125rem;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 850px) {
+  .menu-principal {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}
+.menu-principal ul {
+  padding: 0;
+  list-style-type: none;
+}
+.menu-principal ul li {
+  padding: 0.1em;
+}
+@media (min-width: 500px) {
+  .menu-principal ul li {
+    display: inline-block;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
+@media (min-width: 850px) {
+  .menu-principal ul li {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+}
+
+.enlace-menu {
+  color: #202d0f;
+  text-decoration: none;
+}
+
+.enlace-menu:hover {
+  padding-top: 0.4rem;
+  padding-right: 5rem;
+  padding-bottom: 0.4rem;
+  padding-left: 5rem;
+  color: #fff;
+  background-color: #a700af;
+}
+@media (min-width: 500px) {
+  .enlace-menu:hover {
+    padding: 0.4rem;
+  }
+}
+@media (min-width: 850px) {
+  .enlace-menu:hover {
+    padding: 0.3rem;
+  }
+}
+
+/*ESTILOS DEL CUERPO*/
+.ingredientes {
+  background-color: #cce4ac;
+}
+
+.consejo {
+  color: #fff;
+  background-color: #7fb23a;
+}
+.consejo h3 {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+.foto {
+  max-width: 100%;
+  height: auto;
+}
+
+.etiquetas {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+.etiquetas ul {
+  padding: 0;
+  list-style-type: none;
+}
+.etiquetas ul li {
+  display: inline-block;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+.etiquetas ul li a {
+  padding: 0.3rem;
+  border: #a700af 1px solid;
+}
+.etiquetas ul li a:hover {
+  color: #fff;
+  background-color: #a700af;
+}
+
+.tarjetas {
+  display: block;
+  padding: 1rem;
+  margin: 0;
+}
+
+.bloque {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-auto-rows: minmax(300px);
+  gap: 1.25rem 1.25rem;
+  justify-content: center;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 500px) {
+  .bloque {
+    gap: 2.5rem 2.5rem;
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+.bloque h3 {
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.card {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+
+.redes {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.redes ul {
+  padding: 0;
+  list-style-type: none;
+}
+.redes ul li {
+  display: inline-block;
+}
+
+/**
+ * Do NOT include anything else in this file!
+ *//*# sourceMappingURL=main.css.map */
