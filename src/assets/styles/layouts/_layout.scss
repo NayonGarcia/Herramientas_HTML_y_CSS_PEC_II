@@ -1,0 +1,50 @@
+//ENCABEZADO
+
+header {
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  font-weight: bolder;
+  text-align: center;
+
+  background-color: white;
+}
+
+.header-container {
+   display: block;
+   max-width: 90%;
+
+   font-size: 0.8rem;
+   color: $color-secundario;
+
+  @media (min-width: $mqTablet) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 0 auto;
+    max-width: 80%;
+
+    font-size: 1rem;
+  }
+}
+
+@supports (display: grid) {
+  .header-index {
+    background-color: transparent;
+  }
+}
+
+
+//PRINCIPAL INDEX
+
+
+
+
+

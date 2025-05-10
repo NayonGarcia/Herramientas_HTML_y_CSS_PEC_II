@@ -1,15 +1,16 @@
 @use 'sass:color';
 
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 
-$fuente-principal: 'Klee One', sans-serif;
-$fuente-titulos: 'Chewy', system-ui;
+$fuente-principal: 'Nunito Sans', sans-serif;
+$fuente-especial: 'Plaster', system-ui;
 
-$color-principal: #7fb23a;
-$color-secundario: #a700af;
+$color-principal: #39c1f1;
+$color-secundario: #00446a;
+$color-complemento: #a5cf4f;
 $color-fondo: color.scale($color-principal, $lightness: 60%);
-$color-texto: color.scale($color-principal, $lightness: -75%);
+$color-texto: color.scale($color-secundario, $lightness: -20%);
 
 $mqTablet: 500px;
 $mqPC: 850px;

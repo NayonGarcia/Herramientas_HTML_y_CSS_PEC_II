@@ -22,26 +22,41 @@
 
   <body>
 
-    <header>
+    <header class="header-index">
 
-      <div class="logo">
-        <picture>
-          <source srcset="./assets/images/logo-texto.png" />
-          <img src="./assets/images/logo-texto.png" alt="I Jornadas de Economía Circular"/>
-        </picture>
-      </div>
+      <div class="header-container">
 
-      <div class="container">
-        <ul class="row">
-          <li class="col">BLOG</li>
-          <li class="col">INVITADOS</li>
-          <li class="col">INSCRIPCIÓN</li>
-        </ul>
+        <div class="logo-cont">
+          <picture class="logo-cont">
+            <source srcset="./assets/images/logo-texto.png" />
+            <a href="index.html"><img class="logo" src="./assets/images/logo-texto.png" alt="I Jornadas de Economía Circular"/></a>
+          </picture>
+        </div>
+
+        <div class="menu-nav container">
+          <ul class="row">
+            <li class="col-sm"><a href="articulo.html">NOTICIAS</a></li>
+            <li class="col-sm"><a href="ponentes.html">INVITADOS</a></li>
+            <li class="col-sm"><a href="formulario.html">INSCRIPCIÓN</a></li>
+          </ul>
+        </div>
+
       </div>
 
     </header>
 
-    <main></main>
+    <main>
+
+      <picture>
+        <source srcset="./assets/images/fondo-portada_1200.webp" media="(min-width: $mqPC)"> 
+	      <source srcset="./assets/images/fondo-portada_900.webp" media="(min-width: $mqTablet)">
+	      <source srcset="./assets/images/fondo-portada_500.webp" media= "(max-width: 499px)">
+	      <img class="img-fondo" src="./assets/images/fondo-portada_1200.webp" alt="Dados con imágenes que inspiran desarrollo sostenible" title="Desarrollo sostenible. Jornadas de Economía Circular" width="1200" height="801">
+      </picture>
+
+
+
+    </main>
 
     <footer></footer>
 	  

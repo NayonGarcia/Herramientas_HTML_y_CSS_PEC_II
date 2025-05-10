@@ -1,1 +1,49 @@
+.logo {
+  max-width: 180px;
+  height: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+
+  @media (min-width: $mqTablet) {
+    max-width: 250px;
+  }
+}
+
+.logo-cont {
+  display: flex;
+  grid-column: 1 / 2;
+  justify-content: center;
+
+   @media (min-width: $mqTablet) {
+    justify-content: left;;
+  }
+}
+
+.menu-nav {
+  display: flex;
+  grid-column: 2 / 2;
+  align-items: end;
+  justify-content: center;
+
+  ul {
+    list-style-type: none;
+
+    li > a {
+      text-decoration: none;
+      color: $color-secundario;
+
+      &:hover {
+        color: $color-complemento;
+      }
+    }
+
+  }
+    
+}
+
+.img-fondo {
+  width: 100%;
+  height: auto;
+}
 
