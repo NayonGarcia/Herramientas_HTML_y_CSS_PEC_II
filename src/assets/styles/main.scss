@@ -9,7 +9,7 @@
 
 @import 'variables';
 
-@layer bootstrap, base, layout, modules, state, theme;
+@layer bootstrap, base, layout, modules;
 
 /**
  * Import npm dependencies
@@ -39,14 +39,6 @@
 
 @layer import {
   @import 'layouts/modules';
-}
-
-@layer state {
-  @import 'layouts/state';
-}
-
-@layer theme {
-  @import 'layouts/theme';   
 }
 
 /**

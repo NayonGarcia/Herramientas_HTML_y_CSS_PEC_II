@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+	
+  <head>
+	  
+    <meta charset="utf-8">
+    <meta name="title" content="I Jornadas de Economía Circular Guardamar del Segura">
+    <meta name="author" content="Carolina García González">
+    <meta name="release date" content="11-05-2025">
+    <meta name="description" content="Formulario de inscripción a las I Jornadas de Economía Circular realizadas en Guardamar del Segura">
+    <meta name="keywords" content="economía circular, reciclaje, medio ambiente, ecología, reutilización, conferencias, charlas, exposición, evento informativo">
+    <meta name="copyright" content="UOC 2025">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>I Jornadas de Economía Circular. Formulario de inscripción</title>
+	  
+  </head>
+
+  <body>
+
+    <include src="./views/header.html"></include>
+
+    <main>
+
+      <div class="contenido">
+
+        <div class="contenedor-texto">
+
+          <h1>Formulario de inscripción</h1>
+      
+          <form action="#" method="post">
+	
+	          <section class="formulario">
+		          
+              <h2>Información personal</h2>
+              
+              <ul>
+                <li>
+                  <label for="nombre" class="form-label">
+                    <span>Nombre:</span>
+                  </label>
+                  <input class="form-control" type="text" id="nombre" name="username" value="Nombre" required pattern="[a-z\s]{3,64}" minlength="3" maxlength="64" />
+                </li>
+                
+                <li>
+                  <label class="form-label" for="apellidos">
+                    <span>Apellidos:</span>
+                  </label>
+                  <input class="form-control" type="text" id="apellidos" name="username" value="Apellidos" pattern="[a-z\s]{3,128}" minlength="3" maxlength="128" required />
+                </li>
+			
+			          <li>
+			            <label class="form-label" for="mail">
+			              <span>Correo electrónico:</span>
+			            </label>
+                  <input class="form-control" type="email" id="mail" name="usermail" value="E-mail" required />
+			          </li>
+			
+			          <li>
+			            <label class="form-label" for="tel">
+			              <span>Teléfono:</span>
+			            </label>
+                  <input class="form-control" type="tel" id="tel" name="tel" value="Teléfono de contacto" />
+			          </li>
+              </ul>
+            
+            </section>
+		
+	          <section class="formulario">
+		
+		          <h2>Tipo de pase</h2>
+		
+		          <p>¿Quieres venir como oyente o prefieres participar en el debate? Elige cómo quieres vivir tu experiencia en las jornadas</p>
+		
+		          <p>
+                <label for="entrada">
+                  <span><strong>Elige un pase (los pases de participación tienen plazas limitadas):</strong></span>
+                  <br/>
+                </label>
+			          <select class="form-select" id="entrada" name="entrada">
+				          <option value="pase-participacion">Pase de participación</option>
+				          <option value="pase-oyente">Pase de oyente</option>
+			          </select>
+		          </p>
+	          </section>
+
+            <section class="formulario">
+			        <h2><label class="form-label" for="cometarios">Comentarios o peticiones especiales</label></h2>
+			        <p class="form-control"><textarea class="form-control" id="cometarios" name="cometarios"></textarea></p>
+            </section>
+
+            <section class="formulario">
+              <div class="form-check">
+                <input type="checkbox" id="rgpd" name="rgpd" required />
+                <label for="rgpd">He leído y acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a></label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="nl" name="nl" />
+                <label for="nl">Quiero recibir más información y suscribirme a la <em>newsletter</em></label>
+              </div>
+            </section>
+
+          </form>
+
+        </div>
+      </div>
+
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>

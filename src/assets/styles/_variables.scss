@@ -4,24 +4,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 
 $fuente-principal: 'Nunito Sans', sans-serif;
-$fuente-especial: 'Plaster', system-ui;
 
 $color-principal: #39c1f1;
 $color-secundario: #00446a;
 $color-complemento: #a5cf4f;
-$color-fondo: color.scale($color-principal, $lightness: 60%);
-$color-texto: color.scale($color-secundario, $lightness: -20%);
+$color-titulo: color.scale($color-principal, $lightness: -20%);
+$color-texto: color.scale($color-secundario, $lightness: -40%);
+$color-fondos: color.scale($color-complemento, $lightness: 80%);
+$color-formulario: oklch(90% 0.15 240);
+
 
 $mqTablet: 500px;
 $mqPC: 850px;
 
-@mixin borde-redondo($radio) {
-  -moz-border-radius: $radio;
-  -webkit-border-radius: $radio;
-  -o-border-radius: $radio;
-  -ms-border-radius: $radio;
+@function transparencia($color, $alpha) {
+  @return rgba($color, $alpha);
 }
 
-@function px-a-rem($px, $base: 16px) {
-  @return calc($px / $base) * 1rem;
-}
+
+$form-check-padding-start: 0;
+$form-check-input-checked-bg-color: #a5cf4f;

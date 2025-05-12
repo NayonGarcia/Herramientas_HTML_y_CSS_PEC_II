@@ -26,10 +26,10 @@
 
       <div class="header-container">
 
-        <div class="logo-cont">
+        <div>
           <picture class="logo-cont">
-            <source srcset="./assets/images/logo-texto.png" />
-            <a href="index.html"><img class="logo" src="./assets/images/logo-texto.png" alt="I Jornadas de Economía Circular"/></a>
+            <source srcset="./assets/images/logo-texto-blanco.png" />
+            <a href="index.html"><img class="logo" src="./assets/images/logo-texto-blanco.png" alt="I Jornadas de Economía Circular"/></a>
           </picture>
         </div>
 
@@ -45,20 +45,44 @@
 
     </header>
 
-    <main>
+    <main class="index">
 
-      <picture>
-        <source srcset="./assets/images/fondo-portada_1200.webp" media="(min-width: $mqPC)"> 
-	      <source srcset="./assets/images/fondo-portada_900.webp" media="(min-width: $mqTablet)">
-	      <source srcset="./assets/images/fondo-portada_500.webp" media= "(max-width: 499px)">
-	      <img class="img-fondo" src="./assets/images/fondo-portada_1200.webp" alt="Dados con imágenes que inspiran desarrollo sostenible" title="Desarrollo sostenible. Jornadas de Economía Circular" width="1200" height="801">
-      </picture>
+      <div class="fondo-img">
+
+        <picture>
+          <source srcset="./assets/images/fondo-portada_1200.webp" media="(min-width: $mqPC)"> 
+	        <source srcset="./assets/images/fondo-portada_900.webp" media="(min-width: $mqTablet)">
+	        <source srcset="./assets/images/fondo-portada_mobile-500.webp" media= "(max-width: 499px)">
+	        <img class="img-fondo" src="./assets/images/fondo-portada_1200.webp" alt="Dados con imágenes que inspiran desarrollo sostenible" title="Desarrollo sostenible. Jornadas de Economía Circular" width="1200" height="801">
+        </picture>
+
+      </div>
+
+      <div class="container-index">
+
+        <div class="container-eslogan">
+
+          <h1 class="titulo">Cierra el círculo</h1>
+          <h2 class="subtitulo">Del residuo al recurso</h2>
+
+          <p class="texto">Descubre cómo transformar residuos en recursos, rediseñar el futuro y construir un modelo más sostenible desde lo local. Inspírate, aprende y forma parte del cambio.</p>
+
+        </div>
+
+        <ul class="menu-opciones">
+          <li><a href="articulo.html"><button>Entérate de las útlimas noticias</button></a></li>
+          <li><a href="ponentes.html"><button>Conoce a nuestros expertos</button></a></li>
+          <li><a href="formulario.html"><button>Apúntate al cambio</button></a></li>
+        </ul>
+
+      </div>
 
 
 
     </main>
 
-    <footer></footer>
+    
+    <include src="./views/footer.html"></include>
 	  
     
   
